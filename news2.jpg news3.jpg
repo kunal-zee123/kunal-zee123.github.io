@@ -1,0 +1,12 @@
+<!DOCTYPE html><html lang="hi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kunal Zee Studio - Official</title><style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:Arial;background:#f5f5f5}header{background:#fff;padding:12px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,.1);position:sticky;top:0;z-index:100}header img{height:55px;max-width:90vw;object-fit:contain}.top{background:linear-gradient(90deg,#c40000,#ff4444);color:#fff;text-align:center;padding:10px;font-weight:800;font-size:14px;letter-spacing:1px}.hero{background:#fff;max-width:1000px;margin:15px auto;padding:15px;border-radius:10px;text-align:center}.hero h2{color:#0a2a8a;font-size:16px;line-height:1.6}.grid{max-width:1000px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:15px;padding:0 15px 15px}.card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 3px 10px rgba(0,0,0,.1);transition:.2s}.card:hover{transform:translateY(-3px)}.card img{width:100%;height:190px;object-fit:cover}.info{padding:14px}.info b{font-size:15px;color:#111;display:block;margin-bottom:6px}.info small{color:#666}.ticker{background:#0a2a8a;color:#fff;padding:10px;text-align:center;font-size:13px;font-weight:600}footer{background:#111;color:#aaa;text-align:center;padding:15px;font-size:12px;margin-top:10px}</style></head><body>
+<header><img src="logo.jpg" alt="Kunal ZEE STUDIO Logo"></header>
+<div class="top">KUNAL ZEE STUDIO - होमगार्ड, संविदा, आशा, आंगनबाड़ी, DTC की आवाज</div>
+<div class="hero"><h2>देश के होमगार्ड जवानों, संविदा कर्मियों, आशा बहनों और आंगनबाड़ी सेविकाओं की हर खबर सबसे पहले</h2></div>
+<div class="grid">
+<div class="card"><img src="news1.jpg"><div class="info"><b>झारखंड होमगार्ड 365 दिन रोजगार की मांग तेज!</b><br><small>रवि मुखर्जी को जवानों का समर्थन - 15 अक्टूबर 2024</small></div></div>
+<div class="card"><img src="news1.jpg"><div class="info"><b>बिहार आंगनबाड़ी सेविकाओं के मानदेय में बढ़ोतरी</b><br><small>सरकार ने 2000 रु बढ़ोतरी का ऐलान किया</small></div></div>
+<div class="card"><img src="news1.jpg"><div class="info"><b>दिल्ली DTC कर्मियों की हड़ताल जारी</b><br><small>मांगें पूरी न होने तक आंदोलन जारी रहेगा</small></div></div>
+</div>
+<div class="ticker">🔴 LIVE: Kunal ZEE STUDIO पर देखिये होमगार्ड और संविदा कर्मियों की हर बड़ी खबर</div>
+<footer>© 2024 Kunal ZEE STUDIO | YouTube: Kunal Zee Studio | kunal-zee123.github.io</footer>
+</body></html>
