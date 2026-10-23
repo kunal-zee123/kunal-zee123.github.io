@@ -8,7 +8,63 @@ HTML
 <meta name="theme-color" content="#c90019">
 <meta name="description" content="Kunal Zee Studio पर दिल्ली, होमगार्ड, बस मार्शल और देश-दुनिया की ताजा खबरें पढ़ें और वीडियो देखें।">
 <title>Kunal Zee Studio | आपकी आवाज जनता के साथ</title>
-<style>
+<style>CSS
+
+.editor-welcome {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 25px;
+  margin: 25px 0;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.10);
+}
+
+.editor-photo {
+  flex: 0 0 180px;
+}
+
+.editor-photo img {
+  width: 180px;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 3px solid #d5a323;
+}
+
+.editor-message h2 {
+  margin-top: 0;
+  color: #b51f27;
+}
+
+.editor-message h3 {
+  margin-bottom: 6px;
+  color: #172554;
+}
+
+.editor-designation {
+  font-weight: bold;
+  color: #555555;
+}
+
+.editor-slogan {
+  font-weight: bold;
+  color: #b51f27;
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .editor-welcome {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .editor-photo {
+    flex-basis: auto;
+  }
+}
+
 :root {
   --red: #c90019;
   --dark: #171923;
