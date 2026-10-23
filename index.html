@@ -1,70 +1,264 @@
+HTML
+
 <!DOCTYPE html>
 <html lang="hi">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KUNAL ZEE STUDIO - Desh Bhar Homeguard</title>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@500;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#c90019">
+<meta name="description" content="Kunal Zee Studio पर दिल्ली, होमगार्ड, बस मार्शल और देश-दुनिया की ताजा खबरें पढ़ें और वीडियो देखें।">
+<title>Kunal Zee Studio | आपकी आवाज जनता के साथ</title>
 <style>
-*{box-sizing:border-box}
-body{margin:0;background:#0a0a0a;color:#fff;font-family:'Noto Sans Devanagari','Poppins',Arial;text-align:center}
-.top-bar{background:linear-gradient(90deg,#d00000,#ff0000);padding:14px 10px;display:flex;align-items:center;justify-content:center;gap:12px;box-shadow:0 4px 10px rgba(255,0,0,0.4);position:sticky;top:0;z-index:99}
-.logo-box{width:52px;height:52px;background:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#ff0000;font-weight:900;font-size:22px;border:3px solid #fff;flex-shrink:0}
-.top-text{font-size:17px;font-weight:700;line-height:1.2;text-align:left}
-.live-wrap{background:#1c1c1c;border:2px solid #ff0000;margin:16px;border-radius:16px;overflow:hidden;box-shadow:0 0 15px rgba(255,0,0,0.3)}
-.live-head{background:#ff0000;padding:8px;font-weight:700;color:yellow;letter-spacing:1px}
-.profile-sec{padding:20px 15px}
-.profile-pic{width:170px;height:170px;border-radius:50%;border:5px solid #ff0000;object-fit:cover;box-shadow:0 0 20px rgba(255,0,0,0.5)}
-.name{font-size:28px;font-weight:700;margin:12px 0 0 0}
-.tagline{color:#ffcc00;font-size:18px;margin:5px 0 15px 0;font-weight:500}
-.btn{display:block;background:linear-gradient(90deg,#ff0000,#cc0000);color:#fff;padding:14px;margin:10px 20px;border-radius:35px;text-decoration:none;font-weight:700;font-size:16px;box-shadow:0 4px 8px rgba(0,0,0,0.5)}
-.btn-green{background:linear-gradient(90deg,#25D366,#128C7E)}
-.card-new{background:linear-gradient(145deg,#1e1e1e,#121212);margin:14px;padding:18px;border-radius:14px;text-align:left;border-left:5px solid #ff0000;box-shadow:0 4px 10px rgba(0,0,0,0.5)}
-.card-new h3{color:#ffcc00;font-size:20px;margin:0 0 10px 0}
-.card-new p{font-size:17px;line-height:1.7;color:#e0e0e0;margin:0;letter-spacing:0.3px}
+:root {
+  --red: #c90019;
+  --dark: #171923;
+  --light: #f4f6f9;
+  --white: #ffffff;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Arial, "Noto Sans Devanagari", sans-serif;
+  color: #222;
+  background: var(--light);
+  line-height: 1.6;
+}
+a { color: inherit; text-decoration: none; }
+.container { width: min(1100px, 94%); margin: auto; }
+header { background: var(--white); }
+.brand {
+  display: flex; align-items: center; gap: 12px;
+  padding: 18px 0;
+}
+.logo {
+  width: 55px; height: 55px; border-radius: 12px;
+  background: var(--red); color: white;
+  display: grid; place-items: center;
+  font-size: 20px; font-weight: 900;
+}
+.brand h1 { margin: 0; font-size: clamp(20px, 4vw, 30px); }
+.brand p { margin: 0; color: #666; font-size: 13px; }
+nav {
+  background: var(--dark); color: white;
+  display: flex; gap: 22px; padding: 12px 3%;
+  overflow-x: auto; white-space: nowrap;
+}
+nav a:hover { color: #ffb4bd; }
+.breaking {
+  background: var(--red); color: white;
+  padding: 9px 0; font-weight: bold;
+}
+.breaking span { margin-right: 12px; }
+.hero {
+  margin: 22px 0; padding: 28px;
+  border-radius: 14px; color: white;
+  background: linear-gradient(120deg, #181923, #42495b);
+}
+.hero small { color: #ffb6c0; font-weight: bold; }
+.hero h2 { font-size: clamp(25px, 5vw, 42px); line-height: 1.3; margin: 10px 0; }
+.hero p { color: #e3e5eb; }
+.btn {
+  display: inline-block; padding: 10px 16px;
+  border-radius: 7px; background: var(--red);
+  color: white; font-weight: bold; border: 0;
+  cursor: pointer;
+}
+.btn.dark { background: var(--dark); }
+.section { margin: 28px 0; }
+.section-title {
+  border-left: 5px solid var(--red);
+  padding-left: 12px; margin-bottom: 16px;
+  font-size: 23px;
+}
+.cards {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+.card {
+  background: white; border-radius: 12px;
+  overflow: hidden; border: 1px solid #e6e7eb;
+}
+.card-body { padding: 16px; }
+.tag {
+  display: inline-block; color: var(--red);
+  background: #fff0f2; padding: 3px 8px;
+  border-radius: 5px; font-size: 12px; font-weight: bold;
+}
+.card h3 { margin: 9px 0; font-size: 19px; }
+.card p { color: #666; font-size: 14px; }
+.video-wrap {
+  position: relative; width: 100%;
+  aspect-ratio: 16 / 9; background: #171923;
+}
+.video-wrap iframe { width: 100%; height: 100%; border: 0; }
+.video-placeholder {
+  color: white; padding: 25px; text-align: center;
+}
+.search {
+  width: 100%; padding: 13px; border-radius: 8px;
+  border: 1px solid #ddd; font-size: 16px;
+}
+.socials { display: flex; gap: 10px; flex-wrap: wrap; }
+.socials a {
+  padding: 9px 13px; border-radius: 7px;
+  background: var(--dark); color: white; font-size: 14px;
+}
+.notice { color: #666; font-size: 13px; }
+footer {
+  margin-top: 40px; padding: 28px 0;
+  background: var(--dark); color: white;
+}
+footer p { color: #d1d3dc; font-size: 14px; }
+@media (max-width: 700px) {
+  .cards { grid-template-columns: 1fr; }
+  .hero { padding: 22px; }
+  nav { gap: 18px; }
+  .section-title { font-size: 21px; }
+}
 </style>
 </head>
 <body>
 
-<div class="top-bar">
-<div class="logo-box">KZ</div>
-<div class="top-text">DESH BHAR HOMEGUARD<br><span style="font-size:13px;font-weight:500;color:#ffeb99">KUNAL ZEE STUDIO - LIVE</span></div>
+<header>
+  <div class="container brand">
+    <div class="logo">KZS</div>
+    <div>
+      <h1>Kunal Zee Studio</h1>
+      <p>आपकी आवाज जनता के साथ</p>
+    </div>
+  </div>
+  <nav>
+    <a href="#home">होम</a>
+    <a href="#delhi">दिल्ली न्यूज़</a>
+    <a href="#homeguard">होमगार्ड</a>
+    <a href="#busmarshal">बस मार्शल</a>
+    <a href="#videos">वीडियो</a>
+    <a href="#about">हमारे बारे में</a>
+  </nav>
+</header>
+
+<div class="breaking">
+  <div class="container">
+    <span>न्यूज़ पोर्टल</span>
+    <span>ताजा खबरों के लिए हमारे साथ जुड़े रहें</span>
+  </div>
 </div>
 
-<div class="live-wrap">
-<div class="live-head">🔴 LIVE - ABHI DEKHIYE</div>
-<div style="padding:3px;background:#000">
-<iframe width="100%" height="240" src="https://www.youtube.com/embed/otCvTEq5pKE" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
+<main class="container" id="home">
+  <section class="hero">
+    <small>आपका अपना न्यूज़ प्लेटफॉर्म</small>
+    <h2>दिल्ली से देश तक,<br>हर खबर आप तक</h2>
+    <p>दिल्ली न्यूज़, होमगार्ड, बस मार्शल और जनहित के मुद्दों की जानकारी एक ही जगह।</p>
+    <a class="btn" href="#videos">वीडियो देखें ▶</a>
+  </section>
 
-<div class="profile-sec">
-<img src="kunal.jpg" class="profile-pic" onerror="this.style.display='none'" alt="Arun Ram">
-<h1 class="name">Arun Ram</h1>
-<p class="tagline">देश भर के होमगार्ड की आवाज़</p>
+  <section class="section">
+    <h2 class="section-title">खबर खोजें</h2>
+    <input id="search" class="search" type="search"
+      placeholder="खबर का नाम लिखें..." aria-label="खबर खोजें">
+    <p class="notice">नीचे उपलब्ध खबरों के शीर्षक में खोजें।</p>
+  </section>
 
-<a class="btn" href="https://youtube.com/@kunalzeestudio" target="_blank">▶️ हमारा YouTube चैनल देखें</a>
-<a class="btn btn-green" href="https://wa.me/919999999999">💬 WhatsApp पर जुड़ें</a>
-</div>
+  <section class="section" id="delhi">
+    <h2 class="section-title">दिल्ली की खबरें</h2>
+    <div class="cards">
+      <article class="card searchable">
+        <div class="card-body">
+          <span class="tag">दिल्ली न्यूज़</span>
+          <h3>दिल्ली की ताजा खबरें</h3>
+          <p>यहाँ अपनी नई दिल्ली की खबर का शीर्षक, तारीख और संक्षिप्त विवरण लिखें।</p>
+        </div>
+      </article>
+      <article class="card searchable" id="homeguard">
+        <div class="card-body">
+          <span class="tag">होमगार्ड</span>
+          <h3>दिल्ली होमगार्ड अपडेट</h3>
+          <p>ड्यूटी, भर्ती, आधिकारिक आदेश और जवानों से जुड़ी सत्यापित जानकारी यहाँ प्रकाशित करें।</p>
+        </div>
+      </article>
+      <article class="card searchable" id="busmarshal">
+        <div class="card-body">
+          <span class="tag">बस मार्शल</span>
+          <h3>बस मार्शल की बड़ी खबरें</h3>
+          <p>ट्रांसफर, ड्यूटी और अन्य अपडेट के साथ संबंधित आधिकारिक स्रोत का लिंक जोड़ें।</p>
+        </div>
+      </article>
+    </div>
+  </section>
 
-<div class="card-new">
-<h3>🙏 हमारा संदेश</h3>
-<p>देश भर के सभी होमगार्ड भाइयों को एकजुट करना, उनकी आवाज को सरकार तक पहुँचाना और उनके हक की लड़ाई लड़ना ही KUNAL ZEE STUDIO का लक्ष्य है। हम हर होमगार्ड के दुख-सुख में साथ हैं। जय हिंद, जय होमगार्ड!</p>
-</div>
+  <section class="section" id="videos">
+    <h2 class="section-title">हमारे YouTube वीडियो</h2>
+    <div class="card">
+      <div class="video-wrap" id="video">
+        <div class="video-placeholder">
+          <p>अपना YouTube वीडियो जोड़ने के लिए नीचे निर्देश देखें।</p>
+        </div>
+      </div>
+      <div class="card-body">
+        <h3>Kunal Zee Studio — वीडियो न्यूज़</h3>
+        <p>दिल्ली और जनहित से जुड़ी खबरों के लिए हमारा चैनल देखें।</p>
+        <a class="btn" id="channelLink"
+          href="https://www.youtube.com/"
+          target="_blank" rel="noopener">YouTube चैनल खोलें</a>
+      </div>
+    </div>
+  </section>
 
-<div class="card-new">
-<h3>📢 कुणाल ज़ी स्टूडियो क्या है?</h3>
-<p>यह चैनल होमगार्ड के दर्द, उनकी समस्या और उनकी मांगों को दिखाता है। रोज़ाना खबर और LIVE अपडेट यहीं मिलेगी। हर होमगार्ड भाई इस चैनल को सब्सक्राइब जरूर करे।</p>
-</div>
+  <section class="section" id="about">
+    <h2 class="section-title">सोशल मीडिया पर जुड़ें</h2>
+    <div class="card card-body">
+      <p>हमारे चैनल को फॉलो करें और खबरों को अपने दोस्तों तक पहुँचाएँ।</p>
+      <div class="socials">
+        <a id="youtubeLink" href="https://www.youtube.com/"
+          target="_blank" rel="noopener">▶ YouTube</a>
+        <a id="facebookLink" href="https://www.facebook.com/"
+          target="_blank" rel="noopener">Facebook</a>
+        <a id="instagramLink" href="https://www.instagram.com/"
+          target="_blank" rel="noopener">Instagram</a>
+        <a id="whatsappLink" href="https://wa.me/"
+          target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <p class="notice">प्रकाशित करने से पहले इन लिंक को अपने वास्तविक चैनल और पेज के लिंक से बदलें।</p>
+    </div>
+  </section>
+</main>
 
-<div class="card-new">
-<h3>📞 संपर्क करें</h3>
-<p>ईमेल: kunalzeestudio@gmail.com<br>जगह: फरीदाबाद, हरियाणा<br>हमसे जुड़ने के लिए WhatsApp बटन दबाएं।</p>
-</div>
+<footer>
+  <div class="container">
+    <h2>Kunal Zee Studio</h2>
+    <p>आपकी आवाज जनता के साथ</p>
+    <p>समाचार प्रकाशित करने से पहले तथ्यों और आधिकारिक स्रोतों की जाँच करें।</p>
+    <p>© <span id="year"></span> Kunal Zee Studio</p>
+  </div>
+</footer>
 
-<br>
-<p style="color:#777;font-size:13px">© 2026 KUNAL ZEE STUDIO | जय हिंद</p>
-<br>
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+
+document.getElementById("search").addEventListener("input", function () {
+  const term = this.value.trim().toLocaleLowerCase("hi");
+  document.querySelectorAll(".searchable").forEach(function (card) {
+    card.hidden = !card.textContent.toLocaleLowerCase("hi").includes(term);
+  });
+});
+
+/* अपना सार्वजनिक YouTube वीडियो ID यहाँ लिखें।
+   उदाहरण: https://www.youtube.com/watch?v=ABC123xyz00
+   वीडियो ID = ABC123xyz00
+*/
+const VIDEO_ID = "YOUR_VIDEO_ID";
+
+if (/^[A-Za-z0-9_-]{11}$/.test(VIDEO_ID)) {
+  const frame = document.createElement("iframe");
+  frame.src = "https://www.youtube-nocookie.com/embed/" + VIDEO_ID;
+  frame.title = "Kunal Zee Studio YouTube Video";
+  frame.allow =
+    "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+  frame.allowFullscreen = true;
+  document.getElementById("video").replaceChildren(frame);
+}
+</script>
 
 </body>
 </html>
