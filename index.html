@@ -4,59 +4,67 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>KUNAL ZEE STUDIO - Desh Bhar Homeguard</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@500;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
 <style>
-body{margin:0;background:#000;color:#fff;font-family:Arial;text-align:center}
-.banner{background:linear-gradient(90deg,#ff0000,#b30000);padding:12px;font-size:20px;font-weight:bold;display:flex;align-items:center;justify-content:center;position:sticky;top:0;z-index:10}
-.banner img{width:50px;height:50px;border-radius:50%;border:2px solid #fff;margin-right:12px}
-.live-box{background:#111;border:3px solid red;margin:15px;border-radius:15px;padding:15px}
-.live-box h2{color:yellow;margin:5px}
-.profile{margin-top:20px}
-.profile img{width:160px;height:160px;border-radius:50%;border:4px solid red;object-fit:cover}
-.btn{display:inline-block;background:red;color:#fff;padding:12px 25px;border-radius:30px;text-decoration:none;font-weight:bold;margin:10px}
-.card{background:#1a1a1a;margin:15px;padding:15px;border-radius:12px;text-align:left;border-left:4px solid red}
-.card h3{color:yellow;margin-top:0}
+*{box-sizing:border-box}
+body{margin:0;background:#0a0a0a;color:#fff;font-family:'Noto Sans Devanagari','Poppins',Arial;text-align:center}
+.top-bar{background:linear-gradient(90deg,#d00000,#ff0000);padding:14px 10px;display:flex;align-items:center;justify-content:center;gap:12px;box-shadow:0 4px 10px rgba(255,0,0,0.4);position:sticky;top:0;z-index:99}
+.logo-box{width:52px;height:52px;background:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#ff0000;font-weight:900;font-size:22px;border:3px solid #fff;flex-shrink:0}
+.top-text{font-size:17px;font-weight:700;line-height:1.2;text-align:left}
+.live-wrap{background:#1c1c1c;border:2px solid #ff0000;margin:16px;border-radius:16px;overflow:hidden;box-shadow:0 0 15px rgba(255,0,0,0.3)}
+.live-head{background:#ff0000;padding:8px;font-weight:700;color:yellow;letter-spacing:1px}
+.profile-sec{padding:20px 15px}
+.profile-pic{width:170px;height:170px;border-radius:50%;border:5px solid #ff0000;object-fit:cover;box-shadow:0 0 20px rgba(255,0,0,0.5)}
+.name{font-size:28px;font-weight:700;margin:12px 0 0 0}
+.tagline{color:#ffcc00;font-size:18px;margin:5px 0 15px 0;font-weight:500}
+.btn{display:block;background:linear-gradient(90deg,#ff0000,#cc0000);color:#fff;padding:14px;margin:10px 20px;border-radius:35px;text-decoration:none;font-weight:700;font-size:16px;box-shadow:0 4px 8px rgba(0,0,0,0.5)}
+.btn-green{background:linear-gradient(90deg,#25D366,#128C7E)}
+.card-new{background:linear-gradient(145deg,#1e1e1e,#121212);margin:14px;padding:18px;border-radius:14px;text-align:left;border-left:5px solid #ff0000;box-shadow:0 4px 10px rgba(0,0,0,0.5)}
+.card-new h3{color:#ffcc00;font-size:20px;margin:0 0 10px 0}
+.card-new p{font-size:17px;line-height:1.7;color:#e0e0e0;margin:0;letter-spacing:0.3px}
 </style>
 </head>
 <body>
 
-<div class="banner">
-<img src="kunal.jpg" alt="logo">
-DESH BHAR HOMEGUARD - KUNAL ZEE STUDIO
+<div class="top-bar">
+<div class="logo-box">KZ</div>
+<div class="top-text">DESH BHAR HOMEGUARD<br><span style="font-size:13px;font-weight:500;color:#ffeb99">KUNAL ZEE STUDIO - LIVE</span></div>
 </div>
 
-<div class="live-box">
-<h2>🔴 LIVE - ABHI DEKHIYE</h2>
-<iframe width="100%" height="260" src="https://www.youtube.com/embed/otCvTEq5pKE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<p style="color:#ccc;font-size:12px">Agar video na chale to niche button dabaye</p>
+<div class="live-wrap">
+<div class="live-head">🔴 LIVE - ABHI DEKHIYE</div>
+<div style="padding:3px;background:#000">
+<iframe width="100%" height="240" src="https://www.youtube.com/embed/otCvTEq5pKE" frameborder="0" allowfullscreen></iframe>
+</div>
 </div>
 
-<div class="profile">
-<img src="kunal.jpg" alt="Arun Ram">
-<h1 style="margin:10px 0 0 0;">Arun Ram</h1>
-<p style="color:#ffcc00;margin:5px;">Desh Bhar Ke Homeguard Ki Awaaz</p>
-<a class="btn" href="https://youtube.com/@kunalzeestudio" target="_blank">▶️ Hamara YouTube Channel</a>
-<a class="btn" style="background:#25D366" href="https://wa.me/919999999999">💬 WhatsApp Par Jude</a>
+<div class="profile-sec">
+<img src="kunal.jpg" class="profile-pic" onerror="this.style.display='none'" alt="Arun Ram">
+<h1 class="name">Arun Ram</h1>
+<p class="tagline">देश भर के होमगार्ड की आवाज़</p>
+
+<a class="btn" href="https://youtube.com/@kunalzeestudio" target="_blank">▶️ हमारा YouTube चैनल देखें</a>
+<a class="btn btn-green" href="https://wa.me/919999999999">💬 WhatsApp पर जुड़ें</a>
 </div>
 
-<div class="card">
-<h3>🙏 Hamara Sandesh</h3>
-<p>Desh bhar ke sabhi Homeguard bhaiyon ko ekjut karna, unki awaaz ko sarkar tak pahunchana aur unke hak ki ladai ladna hi KUNAL ZEE STUDIO ka lakshya hai. Jai Hind!</p>
+<div class="card-new">
+<h3>🙏 हमारा संदेश</h3>
+<p>देश भर के सभी होमगार्ड भाइयों को एकजुट करना, उनकी आवाज को सरकार तक पहुँचाना और उनके हक की लड़ाई लड़ना ही KUNAL ZEE STUDIO का लक्ष्य है। हम हर होमगार्ड के दुख-सुख में साथ हैं। जय हिंद, जय होमगार्ड!</p>
 </div>
 
-<div class="card">
-<h3>📢 Kunal Zee Studio Kya Hai?</h3>
-<p>Ye channel Homeguard ke dard, unki samasya aur unki maango ko dikhata hai. Rozana khabar aur Live update yahin milegi.</p>
+<div class="card-new">
+<h3>📢 कुणाल ज़ी स्टूडियो क्या है?</h3>
+<p>यह चैनल होमगार्ड के दर्द, उनकी समस्या और उनकी मांगों को दिखाता है। रोज़ाना खबर और LIVE अपडेट यहीं मिलेगी। हर होमगार्ड भाई इस चैनल को सब्सक्राइब जरूर करे।</p>
 </div>
 
-<div class="card">
-<h3>📞 Sampark Kare</h3>
-<p>Email: kunalzeestudio@gmail.com<br>Location: Faridabad, Haryana</p>
+<div class="card-new">
+<h3>📞 संपर्क करें</h3>
+<p>ईमेल: kunalzeestudio@gmail.com<br>जगह: फरीदाबाद, हरियाणा<br>हमसे जुड़ने के लिए WhatsApp बटन दबाएं।</p>
 </div>
 
-<br><br>
-<p style="color:#666;font-size:12px">© 2026 KUNAL ZEE STUDIO | Jai Hind</p>
+<br>
+<p style="color:#777;font-size:13px">© 2026 KUNAL ZEE STUDIO | जय हिंद</p>
 <br>
 
 </body>
-  </html>
-  
+</html>
